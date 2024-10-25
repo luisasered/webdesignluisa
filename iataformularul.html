@@ -1,0 +1,39 @@
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="mystyle2.css"/>
+</head>
+<body>
+<script type="text/javascript">
+var d = new Date()
+var time = d.getHours()
+if (time < 10) {document.write("GOOD MORNING!")}
+else{document.write("GOOD DAY!")}</script><br><br>    
+<form action="https://api.web3forms.com/submit" method="POST">
+<input type="hidden" name="access_key" value="21d30f11-979f-4fee-b039-959086d4dbc8">
+<table width="800" align="center" rows="10" cols="3" cellspacing="0" border="0">
+<tr>
+<td bgcolor="cyan" colspan="3"><font face="arial black" color="blue" size="+3">Formular de contact</font></td>
+</tr>
+<tr>
+<td width="175" height="65" align="left" valign="center"><font face="arial" color="blue" size="3"><p>Numele &#351;i prenumele:</p></font></td>
+<td width="225" align="left" valign="center"><input name="nume" type="text" value=""></td>
+
+<tr>
+<td height="65"><font face="arial" color="blue" size="3"><p>Adresa e-mail:</p></font></td>
+<td><input name="email" type="text" value=""></td>
+
+</tr>
+
+<tr>
+<td height="65"><font face="arial" color="blue" size="3"><p>Impresiile dumneavoastr&#259;:</p></font></td>
+<td><textarea rows="3" cols="40" name="impresii"></textarea></td>
+
+</tr>
+<tr>
+<td height="65" align="right"><input type="submit" value="Trimite"></td>
+<td align="center"><input type="reset" value="&#350;terge"></td>
+</tr>
+</table>
+</form>
+</body>
+</html>
