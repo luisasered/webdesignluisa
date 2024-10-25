@@ -1,0 +1,36 @@
+<html xmlns:t ="urn:schemas-microsoft-com:time">
+<head>
+<style>
+body {
+  background-image: url('clouds.jpg');
+}
+</style>
+<!-- este definita clasa "time" in care este
+incorporat comportamentul "time2"-->
+<style>
+.time
+{
+behavior: url(#default#time2);
+}
+</style>
+<!-- Se importa in spatiul de nume "t"comportamentul "time2" -->
+<?import namespace="t" implementation="#default#time2">
+<title>XHTML+TIME</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+<body>
+<h1 align="center">Different stages of flight</h1>
+<p>
+<img class="time1" src="https://media.tenor.com/csCKBe8We8kAAAAM/billy-billydollar.gif" alt="poza" id="pic1" style="position:absolute; top:100px; left:350px;" width="119" height="120"/><span class="text1">
+<t:animate targetElement="pic1" attributeName="left" to="400" begin="1" dur="3" accelerate="1" autoreverse="true" repeatCount="indefinite"/>
+<img class="time1" src="https://media.tenor.com/Pyh51IkIxAUAAAAM/takeoff-aircraft.gif" alt="poza" id="pic2" style="position:absolute; top:100px; left:550px;" width="119" height="120"/><span class="text1">
+<t:animate targetElement="pic2" attributeName="left" to="80" begin="1" dur="3" accelerate="1" autoreverse="true" repeatCount="indefinite"/>
+<img class="time1" src="https://media.tenor.com/g-v46cxMEDIAAAAM/relax-comfort.gif" alt="poza" id="pic3" style="position:absolute; top:250px; left:350px;" width="119" height="120"/><span class="text1">
+<t:animate targetElement="pic3" attributeName="left" to="40" begin="1" dur="3" accelerate="1" autoreverse="true" repeatCount="indefinite"/>
+<img class="time1" src="https://media.tenor.com/sJ1F940F-JEAAAAM/andrew-goldstein-frnd.gif" alt="poza" id="pic4" style="position:absolute; top:250px; left:550px;" width="119" height="120"/><span class="text1">
+<t:animate targetElement="pic4" attributeName="left" to="40" begin="1" dur="3" accelerate="1" autoreverse="true" repeatCount="indefinite"/>
+<img class="time1" src="https://media.tenor.com/KLEC2cSrvYwAAAAM/have-a-safe-flight.gif" alt="poza" id="pic5" style="position:absolute; top:400px; left:450px;" width="119" height="120"/><span class="text1">
+<t:animate targetElement="pic5" attributeName="left" to="40" begin="1" dur="3" accelerate="1" autoreverse="true" repeatCount="indefinite"/>
+</p>
+</body>
+</html>
