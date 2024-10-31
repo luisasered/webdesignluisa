@@ -2,5 +2,6 @@ body {
   background-image: url('plane.jpg');
 }
 p {
-font-size:10vw
+font-size:10vw;
+font-family: Arial;
 }
