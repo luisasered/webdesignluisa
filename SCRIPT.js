@@ -1,10 +1,10 @@
 var d=new Date()
 var weekday=new Array(7)
-weekday[0]="Sunday"
-weekday[1]="Monday"
-weekday[2]="Tuesday"
-weekday[3]="Wednesday"
-weekday[4]="Thursday"
-weekday[5]="Friday"
-weekday[6]="Saturday"
-document.write("Today it is " + weekday[d.getDay()])
+weekday[0]="Duminica"
+weekday[1]="Luni"
+weekday[2]="Marti"
+weekday[3]="Miercuri"
+weekday[4]="Joi"
+weekday[5]="Vineri"
+weekday[6]="Sambata"
+document.write("Azi este " + weekday[d.getDay()])
