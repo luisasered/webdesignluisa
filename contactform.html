@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset = "UTF-8">
+        <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="contactform.css">
+        <title></title>
+    </head>
+    <body>
+
+        <div class="container">
+        <form onsubmit="sendEmail(); reset(); return false;">
+
+            <h3>GET IN TOUCH</h3>
+            <input type ="text" id="name" placeholder="Your Name" required><br>
+            <input type ="email" id="email" placeholder="Email id" required><br>
+            <input type ="text" id="phone" placeholder="Phone number" required><br>
+            <textarea id="message" rows="4" placeholder="How can we help you"></textarea><br>
+            <button type="submit">Submit</button>
+        </form>
+        </div>
+        <script src="https://smtpjs.com/v3/smtp.js"></script>
+        <script>
+            function sendEmail(){
+                secureToken:"9AE8C88E80D0D3BD0D798DBA3ECEF6161714A611AFDAB9B99B60823DD418C3599CB3454DADF98E0EC7261B29A1466855",
+                Email.send({
+              
+                To : 'luissered@gmail.com',
+                From : document.getElementById("email").value,
+                Subject : "New contact form Enquiry",
+                Body : "NAME:" + document.getElementById("name").value
+                +"<br> Email:" + document.getElementById("email").value
+                +"<br> Phone number:" + document.getElementById("phone").value
+                +"<br> Message" + document.getElementById("message").value
+                }).then(
+                message => alert("Message Sent")
+                );
+            }
+        </script>
+    </body>
+</html>
